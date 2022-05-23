@@ -12149,8 +12149,9 @@ main {
   padding: 1rem;
 }
 
-.slider .leftright a {
+.slider .leftright i {
   font-size: 3.5rem;
+  z-index: 10;
 }
 
 .slider .controls {
@@ -12183,7 +12184,7 @@ main {
   display: -ms-grid;
   display: grid;
       grid-template-areas: "area1 area2 area3";
-}                                                                                                                                                                                                                                      
+}
 
 .listCards .card1 {
   -ms-grid-row: 1;
@@ -12204,29 +12205,12 @@ main {
 }
 
 .visible {
-  display: block;
+  display: -ms-grid;
+  display: grid;
 }
 
 .novisible {
   display: none;
-}
-
-.texto-txt1 {
-  font-size: 40px;
-  font-family: "Koulen", cursive;
-  color: #db4b57;
-}
-
-.texto-txt2 {
-  font-size: 25px;
-  font-family: "Mukta", sans-serif;
-  color: white;
-}
-
-.texto-txtp {
-  font-size: 18px;
-  font-family: "Heebo", sans-serif;
-  color: #f0d041;
 }
 
 footer {
@@ -12270,5 +12254,23 @@ footer .SocialMedia i {
 
 footer form li {
   padding: 15px;
+}
+
+.texto-txt1 {
+  font-size: 40px;
+  font-family: "Koulen", cursive;
+  color: #db4b57;
+}
+
+.texto-txt2 {
+  font-size: 25px;
+  font-family: "Mukta", sans-serif;
+  color: white;
+}
+
+.texto-txtp {
+  font-size: 18px;
+  font-family: "Heebo", sans-serif;
+  color: #f0d041;
 }
 /*# sourceMappingURL=main.css.map */

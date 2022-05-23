@@ -61,9 +61,10 @@ listacontrols.forEach ((item, pos) => {
 });
 
 //funcionalidad del boton hacia atras (izq)
-let btnLeft = document.querySelector('.leftright a:nth-child(1)');
-btnLeft.onclick = () =>{
+let btnLeft = document.querySelector('.leftright i:nth-child(1)');
 
+btnLeft.onclick = () =>{
+    console.log(this);
     if (posVisible == 0) {
         posVisible = listaDiv.length -1;
     }else{
@@ -84,7 +85,7 @@ btnLeft.onclick = () =>{
 
 
 //funcionalidad del boton hacia adelante (derecho)
-let btnRight = document.querySelector('.leftright a:nth-child(2)');
+let btnRight = document.querySelector('.leftright i:nth-child(2)');
 
 btnRight.onclick = () => {
 

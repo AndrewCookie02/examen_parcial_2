@@ -8,6 +8,10 @@
 
     <!--referencia font awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
 
 
     <!--incoroprar librerias boostrap-->
@@ -59,15 +63,16 @@
           </nav>
   </header>
 
-
   <aside>
         <div>
             <ul>
-                <h2>Men&uacute;</h2>
+              <a href="#CuerpoMenu"><h2>Men&uacute;</h2></a>
                 <li>Bebida</li>
                 <li>Postres</li>
                 <li>Entrada</li>
             </ul>
+            <a href="#contacto"><h2>Cont&aacute;ctenos</h2></a>
+            <a href="#subscripcion"><h2>Follow us</h2></a>
         </div>
   </aside>
 
@@ -78,7 +83,7 @@
                 <img class="img-fluid" src="public/img/img01.jpg" alt="">
             </figure>
             <div class="detImg">
-                <h3>Entrada</h3>
+                <h3 class="texto-txt1">Entrada</h3>
             </div>
         </div>
 
@@ -87,7 +92,7 @@
                 <img class="img-fluid" src="public/img/img02.jpg" alt="">
             </figure>
             <div class="detImg">
-                <h3>Postre</h3>
+                <h3 class="texto-txt1">Postre</h3>
             </div>
         </div>
 
@@ -96,14 +101,16 @@
                 <img class="img-fluid" src="public/img/img03.jpg" alt="">
             </figure>
             <div class="detImg">
-                <h3>Bebida</h3>
+                <h3 class="texto-txt1">Bebida</h3>
             </div>
         </div>
     </article>
 
     <article class="leftright">
-        <a href="#"><i class="fa-solid fa-arrow-left"></i></a>
-        <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+      <i class="fa-solid fa-arrow-left fa-2x" id="FIzq"></i>
+      <i class="fa-solid fa-arrow-right fa-2x"></i>
+      
+        
     </article>
 
     <article class="controls">
@@ -118,17 +125,19 @@
         <img src="public/img/namesnack-cupcake-business-names-3993x6005-20210127.jpeg" alt="">
     </figcaption>
     <div id="texto">
-        <h1>Nombre restaurante</h1>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat eaque eligendi quae iusto nihil nisi eveniet accusamus placeat, rerum amet ea perspiciatis tempora facere ut fugit omnis non enim modi?</p>
+        <h1 class="texto-txt1">Nombre restaurante</h1>
+        <p class="texto-txt2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat eaque eligendi quae iusto nihil nisi eveniet accusamus placeat, rerum amet ea perspiciatis tempora facere ut fugit omnis non enim modi?</p>
     </div>
 
     <div id="botones">
-        <button type="button" class="btn btn-primary">Men&uacute;</button>
-        <button type="button" class="btn btn-primary">Ordena aqu&iacute;</button>
+      <a href="#CuerpoMenu" class="texto-txtp"><button type="button" class="btn btn-primary">Men&uacute;</button></a>
+
+      <a href="" class="texto-txtp"><button type="button" class="btn btn-primary">Ordena aqu&iacute;</button></a>
+        
     </div>
   </div>
 
-  <div class="contactos">
+  <div class="contactos" id="contacto">
       <div class="Info">
         <div class="card " style="max-width: 39.1rem;">
             <img style="width: 39rem;" src="public/img/main img.jpg" class="card-img-bottom" alt="...">
@@ -153,21 +162,18 @@
       </div>
     </div>
 
-
-    
-
   <main>
        
-        <section class="botonesMenu">
-            <button class="BtnVer">Vintage</button>
+    <section class="botonesMenu">
+      <button class="BtnVer">Vintage</button>
     
-            <button class="BtnVer">Chocolate</button>
+      <button class="BtnVer">Chocolate</button>
         
-            <button class="BtnVer">Strawberry</button>
-        </section>
+      <button class="BtnVer">Strawberry</button>
+    </section>
 
-    <section class="CuerpoMenu">
-
+    <section class="CuerpoMenu" id="CuerpoMenu">
+      <h1 class="texto-txt1"><i class="fa-solid fa-cake-candles"></i>Nuestro menú</h1>
         <div class="listCards w-100">
           <div class="card card1" style="width: 18rem;">
             <img src="public/img/screen-shot-2021-04-10-at-9.02.46-pm-3.webp" class="card-img-top" alt="...">
