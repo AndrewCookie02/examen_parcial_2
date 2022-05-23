@@ -1,0 +1,45 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    background-color: rgb(252, 127, 137);
+}
+
+main{
+    padding-top: 25%;
+    
+    
+}
+
+#bienvenida{
+    padding-top: 50%;
+    padding-left: 25%;
+    display: grid;
+    grid-template-areas: "img img"
+                        "texto texto"
+                        "boton boton"; 
+    width: 90%;
+}
+
+figcaption {
+    grid-area: img;
+    img{
+    margin-left: 25%;
+    width: 40%;
+    }
+}
+#texto{
+    grid-area: texto;
+}
+#botones{
+    grid-area: boton;
+    width: 90%;
+    padding-left: 6%;
+    display: flex;
+justify-content: space-around;
+}

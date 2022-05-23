@@ -1,0 +1,10 @@
+//variables boostrap
+$primary: $myPrimary;
+$secundary: $mysecundary ;
+$info: $myinfo ;
+$dark: $mydark ;
+
+$thumbnail-bg: $myBgColorLight ;
+
+//libreria principal de bootstrap
+@import "../bootstrap/bootstrap.scss";

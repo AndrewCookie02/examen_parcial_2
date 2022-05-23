@@ -1,0 +1,76 @@
+/*Ajustes del slider*/
+.slider{
+    position: relative;
+    top: 5rem;
+    width: 30%;
+    height: 10%;
+    margin: auto;
+
+    .imgslider{
+
+        div figure{
+            position: absolute;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+            
+        }
+    
+        .detImg{
+            position: absolute;
+            background-color: rebeccapurple;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            top:10rem;
+
+            h3{
+                color:aliceblue;
+                font-size: 1.5rem;
+                text-align: center;
+            }
+        }
+    }
+    
+    .leftright{
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        padding: 1rem;
+    }
+    
+    .leftright a{
+        font-size: 3.5rem;
+    }
+    
+    .controls{
+        position: absolute;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .controls i{
+        font-size: 1 rem;
+        margin: 1.5rem;
+        transition: all 750ms ease-in-out;
+    }
+    
+    .controls i:hover{
+        transform: scale(1.3);
+    }
+}
+
+
+//visualiza
+.visible{
+    opacity: 1;
+}
+
+//oculta
+.oculta{
+    opacity: 0;
+}
+

@@ -1,0 +1,37 @@
+footer{
+    @include margin (0px, 0px, 50px, 0px);
+    text-align: center;
+    padding: 2rem;
+    background-color: $myPrimary;
+
+    .SocialMedia{
+    
+        :hover{
+            color: $mysecundary;
+        }
+    
+        ul{
+            @include setFlex(row, center);
+        }
+    
+        li{
+            padding: 10px;
+        }
+    
+        i{
+            font-size: 50px;
+            font-weight: 500;
+            color: $myinfo;
+        }
+
+    }
+
+    form{
+
+        li{
+            padding: 15px;
+        }
+    }
+
+}
+

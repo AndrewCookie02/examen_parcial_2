@@ -1,0 +1,23 @@
+
+.listCards{
+    display: grid;
+    grid-template-areas: "area1 area2 area3";
+
+    .card1{
+        grid-area: area1;
+    }
+    .card2{
+        grid-area: area2;
+    }
+    .card3{
+        grid-area: area3;
+    }
+}
+
+.visible{
+    display: block;
+}
+
+.novisible{
+    display: none;
+}

@@ -1,0 +1,34 @@
+
+//Variables
+
+@import "shared/variables";
+
+
+
+//Bootstrap
+
+@import "shared/mybootstrap";
+
+
+//Config
+
+@import 'config/cuerpo';
+@import 'config/general';
+@import 'config/slider';
+
+@import 'config/menu';
+@import 'config/texto';
+@import 'config/footer';
+
+
+
+
+
+//Fonts
+
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300&family=Koulen&family=Mukta&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+

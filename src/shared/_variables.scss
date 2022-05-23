@@ -1,0 +1,20 @@
+$myPrimary: rgb(240, 208, 65);
+$mysecundary: white ;
+$myinfo: rgb(219, 75, 87);
+$mydark: black ;
+
+$myBgColorLight: rgb(243, 126, 136);
+
+$myBgColorLight2: rgb(106, 131, 245);
+
+$myBgColorLight3: rgb(107, 240, 218);
+
+$boxshadow:  9px 7px 7px 0px rgb(35, 37, 43);
+
+@mixin setFlex ($flexDir, $alig){
+    display: flex;
+    flex-direction: $flexDir; //row;
+    flex-wrap: wrap;
+    justify-content: $alig; //space-around;
+}
+

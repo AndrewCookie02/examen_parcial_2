@@ -1,0 +1,62 @@
+@mixin margin ($left, $right, $top, $bottom){
+    margin-left: $left;
+    margin-right: $right;
+    margin-top: $top;
+    margin-bottom: $bottom ;
+}
+
+#encabezado{
+   z-index: 9999;
+    position: fixed;
+    padding-right: 200rem;
+    background-color: $myBgColorLight2;
+
+}
+
+aside{
+    float: left;
+    position: fixed;
+    z-index: 10;
+    padding-top: 150px;
+    padding-bottom: 380rem;
+    padding-right: 10px;
+    padding-left: 10px;
+    background-color: #f8f8ff;
+}
+
+main{
+    padding-left: 14rem;
+    padding-right: 1rem;
+}
+
+.contactos{
+
+    .Info{
+        @include margin (35%, 35%, 0%, 0%);
+        padding-top: 10rem;
+        justify-content: center;
+        border-radius: 10%;
+
+        i{
+            font-size: 15px;
+            padding: 1rem;  
+        }
+
+        div{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: $myBgColorLight2;
+        } 
+
+        ul{
+            @include setFlex(column, center); 
+            align-items: flex-start;
+        }
+
+        p{
+            text-align: center;
+        }
+    }
+}

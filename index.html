@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!--referencia font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!--incoroprar librerias boostrap-->
+
+    <!-- 1.JQuery -->
+    <script
+  src="https://code.jquery.com/jquery-3.6.0.js"
+ integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
+    <!--2.Poppers.Js  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+   <!-- 3.Boostrap Js  -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <!-- 4.Boostrap Css (archivo css personalizado) -->
+    <link rel="stylesheet" href="public/css/main.css">
+
+</head>
+<body>
+    
+  <header id="encabezado">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Navbar</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Dropdown
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+  </header>
+
+
+  <aside>
+        <div>
+            <ul>
+                <h2>Men&uacute;</h2>
+                <li>Bebida</li>
+                <li>Postres</li>
+                <li>Entrada</li>
+            </ul>
+        </div>
+  </aside>
+
+  <div class="slider">
+    <article class="imgslider">
+        <div>
+            <figure>
+                <img class="img-fluid" src="public/img/img01.jpg" alt="">
+            </figure>
+            <div class="detImg">
+                <h3>Entrada</h3>
+            </div>
+        </div>
+
+        <div>
+            <figure>
+                <img class="img-fluid" src="public/img/img02.jpg" alt="">
+            </figure>
+            <div class="detImg">
+                <h3>Postre</h3>
+            </div>
+        </div>
+
+        <div>
+            <figure>
+                <img class="img-fluid" src="public/img/img03.jpg" alt="">
+            </figure>
+            <div class="detImg">
+                <h3>Bebida</h3>
+            </div>
+        </div>
+    </article>
+
+    <article class="leftright">
+        <a href="#"><i class="fa-solid fa-arrow-left"></i></a>
+        <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+    </article>
+
+    <article class="controls">
+        <i class="fas fa-circle"></i>
+        <i class="fas fa-circle"></i>
+        <i class="fas fa-circle"></i>
+    </article>
+  </div>
+  
+  <div id="bienvenida">
+    <figcaption>
+        <img src="public/img/namesnack-cupcake-business-names-3993x6005-20210127.jpeg" alt="">
+    </figcaption>
+    <div id="texto">
+        <h1>Nombre restaurante</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat eaque eligendi quae iusto nihil nisi eveniet accusamus placeat, rerum amet ea perspiciatis tempora facere ut fugit omnis non enim modi?</p>
+    </div>
+
+    <div id="botones">
+        <button type="button" class="btn btn-primary">Men&uacute;</button>
+        <button type="button" class="btn btn-primary">Ordena aqu&iacute;</button>
+    </div>
+  </div>
+
+  <div class="contactos">
+      <div class="Info">
+        <div class="card " style="max-width: 39.1rem;">
+            <img style="width: 39rem;" src="public/img/main img.jpg" class="card-img-bottom" alt="...">
+            <div class="card-body">
+                <h1 class="card-title texto-txt1">Pasteleria</h1>
+                <h2 class="card-text texto-txt2"><i class="fa-solid fa-circle-arrow-right"></i></i>Contactos<i class="fa-solid fa-circle-arrow-left"></i></h2>
+                <ul>
+                    <li>
+                      <p class="texto-txtp"><i class="fa-solid fa-envelope"></i>Name@domain.com</p>
+                    </li>
+                    <li>
+                      <p class="texto-txtp"><i class="fa-solid fa-phone"></i>+505 8849 5687</p>
+                    </li>
+                    <li>
+                      <p class="texto-txtp"><i class="fa-brands fa-facebook"></i>Pasteleria</p>
+                    </li>
+                </ul>
+                <p class="card-text texto-txtp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, reprehenderit.</p>
+                <button type="button" class="btn btn-outline-light w-50">Order</button>     
+            </div>
+        </div>
+      </div>
+    </div>
+
+
+    
+
+  <main>
+       
+        <section class="botonesMenu">
+            <button class="BtnVer">Vintage</button>
+    
+            <button class="BtnVer">Chocolate</button>
+        
+            <button class="BtnVer">Strawberry</button>
+        </section>
+
+    <section class="CuerpoMenu">
+
+        <div class="listCards w-100">
+          <div class="card card1" style="width: 18rem;">
+            <img src="public/img/screen-shot-2021-04-10-at-9.02.46-pm-3.webp" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+
+          <div class="card card2" style="width: 18rem;">
+            <img src="public/img/img01.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+
+          <div class="card card3" style="width: 18rem;">
+            <img src="public/img/img03.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+        </div> <!---->
+
+        <div class="listCards w-100">
+            <div class="card card1" style="width: 18rem;">
+                <img src="public/img/chocolate.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+            </div>
+
+            <div class="card card2" style="width: 18rem;">
+                <img src="public/img/img01.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+            </div>
+
+            <div class="card card3" style="width: 18rem;">
+                <img src="public/img/img01.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+            </div>
+        </div> <!---->
+
+        <div class="listCards w-100">
+            <div class="card card1" style="width: 18rem;">
+                <img src="public/img/strawberry.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+            </div>
+
+            <div class="card card2" style="width: 18rem;">
+                <img src="public/img/strawberry 2.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+            </div>
+
+            <div class="card card3" style="width: 18rem;">
+                <img src="public/img/img01.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+            </div>
+    </div> <!---->
+
+    </section>
+
+  </main>
+
+  <footer id="subscripcion">
+      <h1>Follow us!</h1>
+      <p>Follow us on:</p>
+
+      <nav class="SocialMedia">
+        <ul>
+          <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+        </ul>
+      </nav>
+
+      <p>Suscribe to our site</p>
+
+      <form action="">
+        <ul>
+          <li class="Inputs">
+            <input type="email" name="email" id="email" placeholder="E-mail">      
+          </li>
+  
+          <li class="subBtn">
+            <button type="button" class="btn btn-info">Subscribe</button>
+          </li>
+  
+          <li class="form-check">
+            <label class="form-check-label">
+              <input type="checkbox" class="form-check-info" name="T&C" id="T&C" value="checkedValue" checked>
+              Accept Terms and Conditions
+            </label>
+          </li>
+        </ul>
+      </form>
+  </footer>
+
+  <script src="public/js/js-slider/slider.js"></script>
+  <script src="public/js/js-boton/boton.js"></script>
+
+</body>
+</html>

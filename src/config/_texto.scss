@@ -1,0 +1,31 @@
+$font1: 'Koulen', cursive;
+$font2: 'Mukta', sans-serif;
+$fontp: 'Heebo', sans-serif;
+
+$colors: ('txt1':$myinfo, 'txt2':$mysecundary, 'txtp': $myPrimary);
+
+@mixin setText ($size, $Family, $textcolor){
+    font-size: $size;
+    font-family: $Family;
+    color: $textcolor;
+}
+
+$textos: ('txt1': 40px $font1 map-get($colors,'txt1'),
+'txt2': 25px $font2 map-get($colors,'txt2'), 
+'txtp': 18px $fontp map-get($colors,'txtp') );
+
+.texto{
+    $lista: map-keys($map: $textos);
+
+    @each $fuente in $lista {
+        $valores: map-get($map: $textos, $key: $fuente);
+
+        $size: nth($list: $valores, $n: 1);
+        $Family: nth($list: $valores, $n:2);
+        $textcolor: nth($list: $valores , $n: 3);
+
+        &-#{$fuente}{
+            @include setText ($size, $Family, $textcolor);
+        }
+    }
+}
