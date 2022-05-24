@@ -1,16 +1,72 @@
+.botonesMenu{
+    display: flex;
+    justify-content: space-around;
+    @include margin(0%,0%,0%,4%);
+
+    .BtnVer{
+        color: $myinfo;
+        background-color:  $myBgColorLight3 ;
+        transition: all ease-in-out 0.5s;
+        font-size: 20px;
+        padding: 10px;
+        &:hover{
+            color:  $myBgColorLight3 ;
+        background-color: $myinfo ;
+        }
+    }
+}
+.tituloMenu{
+    text-align: center;
+    @include margin(0%,0%,0%,5%);
+    
+}
+%animation{
+    transition: all ease-in-out 0.5s;
+    transform: scale(1.1);
+}
+
+%animaImg{
+    transition: all ease-in-out 0.5s;
+    filter: brightness(0.75);
+}
 
 .listCards{
     display: grid;
     grid-template-areas: "area1 area2 area3";
-
+    padding-left: 10%;
     .card1{
+        img{
+            &:hover{
+                @extend %animaImg;
+            }
+        }
         grid-area: area1;
+        
+        &:hover{
+            @extend %animation;
+        }
     }
     .card2{
         grid-area: area2;
+        img{
+            &:hover{
+                @extend %animaImg;
+            }
+        }
+        &:hover{
+            @extend %animation;
+        }
     }
     .card3{
         grid-area: area3;
+        img{
+            &:hover{
+                @extend %animaImg;
+            }
+        }
+        &:hover{
+            @extend %animation;
+        }
     }
 }
 

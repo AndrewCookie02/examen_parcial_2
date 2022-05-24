@@ -10,7 +10,7 @@ $colors: ('txt1':$myinfo, 'txt2':$mysecundary, 'txtp': $myPrimary);
     color: $textcolor;
 }
 
-$textos: ('txt1': 40px $font1 map-get($colors,'txt1'),
+$textos: ('txt1': 50px $font1 map-get($colors,'txt1'),
 'txt2': 25px $font2 map-get($colors,'txt2'), 
 'txtp': 18px $fontp map-get($colors,'txtp') );
 

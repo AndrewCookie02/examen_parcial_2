@@ -5,12 +5,29 @@
     margin-bottom: $bottom ;
 }
 
+
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    background-color: rgb(252, 127, 137);
+    a{
+        color: $mydark;
+    }
+}
+
 #encabezado{
    z-index: 9999;
     position: fixed;
     padding-right: 200rem;
     background-color: $myBgColorLight2;
-
+.navbar-toggler-icon{
+    background-color: $mysecundary;
+}
 }
 
 aside{
@@ -27,6 +44,7 @@ aside{
 main{
     padding-left: 14rem;
     padding-right: 1rem;
+    padding-top: 25%;
 }
 
 .contactos{

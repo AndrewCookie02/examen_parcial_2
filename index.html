@@ -11,9 +11,6 @@
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-
-
-
     <!--incoroprar librerias boostrap-->
 
     <!-- 1.JQuery -->
@@ -34,7 +31,7 @@
   <header id="encabezado">
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#">Navbar</a>
+              <a class="navbar-brand" href="#">Cake Shop</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -44,17 +41,16 @@
                     <a class="nav-link active" aria-current="page" href="#">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
+                    <a class="nav-link" href="#contacto">Contacto</a>
                   </li>
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Dropdown
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#CuerpoMenu">Menu</a></li>
                       <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      <li><a class="dropdown-item" href="#subscripcion">Follow us</a></li>
                     </ul>
                   </li>
                 </ul>
@@ -63,16 +59,16 @@
           </nav>
   </header>
 
-  <aside>
+  <aside class="aside">
         <div>
             <ul>
-              <a href="#CuerpoMenu"><h2>Men&uacute;</h2></a>
-                <li>Bebida</li>
-                <li>Postres</li>
-                <li>Entrada</li>
+              <a href="#CuerpoMenu" class="texto-txt1"><h2>Men&uacute;</h2></a>
+                <li>Vintage</li>
+                <li>Chocolate</li>
+                <li>Strawberry</li>
             </ul>
-            <a href="#contacto"><h2>Cont&aacute;ctenos</h2></a>
-            <a href="#subscripcion"><h2>Follow us</h2></a>
+            <a href="#contacto" class="texto-txt1"><h2>Cont&aacute;ctenos</h2></a>
+            <a href="#subscripcion" class="texto-txt1"><h2>Follow us</h2></a>
         </div>
   </aside>
 
@@ -83,7 +79,7 @@
                 <img class="img-fluid" src="public/img/img01.jpg" alt="">
             </figure>
             <div class="detImg">
-                <h3 class="texto-txt1">Entrada</h3>
+                <h3 class="texto-txt1">M&aacute;s vendidos</h3>
             </div>
         </div>
 
@@ -92,7 +88,7 @@
                 <img class="img-fluid" src="public/img/img02.jpg" alt="">
             </figure>
             <div class="detImg">
-                <h3 class="texto-txt1">Postre</h3>
+                <h3 class="texto-txt1">M&aacute;s vendidos</h3>
             </div>
         </div>
 
@@ -101,16 +97,14 @@
                 <img class="img-fluid" src="public/img/img03.jpg" alt="">
             </figure>
             <div class="detImg">
-                <h3 class="texto-txt1">Bebida</h3>
+                <h3 class="texto-txt1">M&aacute;s vendidos</h3>
             </div>
         </div>
     </article>
 
     <article class="leftright">
-      <i class="fa-solid fa-arrow-left fa-2x" id="FIzq"></i>
-      <i class="fa-solid fa-arrow-right fa-2x"></i>
-      
-        
+      <i class="fa-solid fa-arrow-left fa-5x" id="FIzq"></i>
+      <i class="fa-solid fa-arrow-right fa-5x"></i>
     </article>
 
     <article class="controls">
@@ -125,7 +119,7 @@
         <img src="public/img/namesnack-cupcake-business-names-3993x6005-20210127.jpeg" alt="">
     </figcaption>
     <div id="texto">
-        <h1 class="texto-txt1">Nombre restaurante</h1>
+        <h1 class="texto-txt1">Cake Shop</h1>
         <p class="texto-txt2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat eaque eligendi quae iusto nihil nisi eveniet accusamus placeat, rerum amet ea perspiciatis tempora facere ut fugit omnis non enim modi?</p>
     </div>
 
@@ -139,8 +133,8 @@
 
   <div class="contactos" id="contacto">
       <div class="Info">
-        <div class="card " style="max-width: 39.1rem;">
-            <img style="width: 39rem;" src="public/img/main img.jpg" class="card-img-bottom" alt="...">
+        <div class="card mb-12 sm-12 col-lg-12" style="max-width: 39.1rem;">
+            <img style="width: 39rem;" src="public/img/main img.jpg" class="card-img-bottom img-fluid" alt="...">
             <div class="card-body">
                 <h1 class="card-title texto-txt1">Pasteleria</h1>
                 <h2 class="card-text texto-txt2"><i class="fa-solid fa-circle-arrow-right"></i></i>Contactos<i class="fa-solid fa-circle-arrow-left"></i></h2>
@@ -163,8 +157,9 @@
     </div>
 
   <main>
-       
+    <h1 class="texto-txt1 tituloMenu"><i class="fa-solid fa-cake-candles"></i>Nuestro menú</h1>
     <section class="botonesMenu">
+      
       <button class="BtnVer">Vintage</button>
     
       <button class="BtnVer">Chocolate</button>
@@ -173,7 +168,7 @@
     </section>
 
     <section class="CuerpoMenu" id="CuerpoMenu">
-      <h1 class="texto-txt1"><i class="fa-solid fa-cake-candles"></i>Nuestro menú</h1>
+      
         <div class="listCards w-100">
           <div class="card card1" style="width: 18rem;">
             <img src="public/img/screen-shot-2021-04-10-at-9.02.46-pm-3.webp" class="card-img-top" alt="...">
@@ -284,6 +279,7 @@
 
   <script src="public/js/js-slider/slider.js"></script>
   <script src="public/js/js-boton/boton.js"></script>
+  <script src="public/js/js-aside/aside.js"></script>
 
 </body>
 </html>
