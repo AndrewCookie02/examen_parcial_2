@@ -2,7 +2,7 @@ $font1: 'Koulen', cursive;
 $font2: 'Mukta', sans-serif;
 $fontp: 'Heebo', sans-serif;
 
-$colors: ('txt1':$myinfo, 'txt2':$mysecundary, 'txtp': $myPrimary);
+$colors: ('txt1':$myinfo, 'txt2':$mysecundary, 'txtp': $myPrimary, 'txtp2': $mydark);
 
 @mixin setText ($size, $Family, $textcolor){
     font-size: $size;
@@ -12,7 +12,8 @@ $colors: ('txt1':$myinfo, 'txt2':$mysecundary, 'txtp': $myPrimary);
 
 $textos: ('txt1': 50px $font1 map-get($colors,'txt1'),
 'txt2': 25px $font2 map-get($colors,'txt2'), 
-'txtp': 18px $fontp map-get($colors,'txtp') );
+'txtp': 20px $fontp map-get($colors,'txtp'),
+'txtp2': 18px $fontp map-get($colors,'txtp2') );
 
 .texto{
     $lista: map-keys($map: $textos);

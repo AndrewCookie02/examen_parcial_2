@@ -1,8 +1,8 @@
 /*Ajustes del slider*/
 .slider{
     position: relative;
-    top: 5rem;
-    width: 30%;
+    top: 11rem;
+    width: 40%;
     height: 10%;
     margin: auto;
 
@@ -19,7 +19,7 @@
     
         .detImg{
             position: absolute;
-            background-color: rebeccapurple;
+            background-color: $myinfo;
             width: 100%;
             display: flex;
             justify-content: center;
@@ -29,6 +29,7 @@
                 color:aliceblue;
                 font-size: 1.5rem;
                 text-align: center;
+                padding-top: 10px;
             }
         }
     }

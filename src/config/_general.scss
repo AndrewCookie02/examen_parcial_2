@@ -25,9 +25,14 @@ body{
     position: fixed;
     padding-right: 200rem;
     background-color: $myBgColorLight2;
-.navbar-toggler-icon{
-    background-color: $mysecundary;
-}
+
+    i{
+        padding: 0rem 1rem 0rem 1rem;
+    }
+
+    .navbar-toggler-icon{
+        background-color: $mysecundary;
+    }
 }
 
 aside{
@@ -38,14 +43,25 @@ aside{
     padding-bottom: 380rem;
     padding-right: 10px;
     padding-left: 10px;
-    background-color: #f8f8ff;
+    background-color: #fbc1c1;
 }
 
 main{
-    padding-left: 14rem;
-    padding-right: 1rem;
-    padding-top: 25%;
+    padding-left: 5rem;
+    padding-right: 2rem;
+    padding-top: 10%;
+    padding-bottom: 10%;
+
+    i{
+        padding: 1rem;
+    }
+
+    .listCards{
+        margin: 4rem;
+    }
+
 }
+
 
 .contactos{
 

@@ -1,17 +1,32 @@
 .botonesMenu{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     @include margin(0%,0%,0%,4%);
 
     .BtnVer{
-        color: $myinfo;
-        background-color:  $myBgColorLight3 ;
-        transition: all ease-in-out 0.5s;
-        font-size: 20px;
+        width: 135px;
+        border-style: none;
+        background-color: $mysecundary;
         padding: 10px;
-        &:hover{
-            color:  $myBgColorLight3 ;
-        background-color: $myinfo ;
+        border-radius: 50px;
+        position: relative;
+        overflow: hidden;
+        transition: .2s ease all;
+
+        &::after{
+            content: "";
+            width: 100%;
+            height: 100%;
+            background-color: $myBgColorLight2;
+            position: absolute;
+            z-index: 1;
+            top: -58px;
+            left: 0;
+            transition: .2s ease-in-out all;
+        }
+
+        &:hover::after{
+            top: 0;
         }
     }
 }
