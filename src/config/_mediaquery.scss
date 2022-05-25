@@ -1,9 +1,9 @@
-@media all and (max-width:660px){
+@media all and (max-width: 628px){
 
     /*******************/
     .slider{
         position: relative;
-        top: 7rem;
+        top: 9rem;
         width: 70%;
         margin: auto;
 
@@ -69,7 +69,7 @@
 
     /*******************/
     #bienvenida{
-        padding-top: 100%;
+        padding-top: 70%;
         padding-left: 18%;
         display: grid;
         grid-template-areas: "img img"
@@ -109,11 +109,13 @@
             grid-template-areas: "title h2"
                                 "p ul"
                                 "button button";
+
                 h1{
                     grid-area: title;
                 }
                 h2{
                     grid-area: h2;
+                    text-align: center;
                 }
                 p{
                     grid-area: p;
@@ -161,10 +163,18 @@
 
     .botonesMenu{
         display: flex;
-        @include margin(0%,55%,0%,7%);
+        @include margin(0%,10%,0%,7%);
+        .BtnVer{
+        @include margin(0%,5%,0%,0%);
+        }
     }
     .tituloMenu{
-        @include margin(-50%,0%,0%,5%);
+        @include margin(0%,20%,0%,6%);
+        
+    }
+
+    .CuerpoMenu{
+        @include margin(0%,70%,0%,5%);
     }
 
     .listCards{
@@ -172,7 +182,7 @@
         grid-template-areas: "area1 area1" 
                             "area2 area2" 
                             "area3 area3";
-        @include margin(-25%,0%,0%,5%);
+        
         .card1{
             grid-area: area1;
             @include margin(0%,0%,0%,10%);

@@ -12004,14 +12004,14 @@ fieldset:disabled .btn {
 }
 
 * {
-  margin: 0px;
-  padding: 0px;
   text-decoration: none;
   list-style: none;
 }
 
 body {
   background-color: #fc7f89;
+  margin: 0px;
+  padding: 0px;
 }
 
 body a {
@@ -12023,14 +12023,13 @@ body a {
   position: fixed;
   padding-right: 200rem;
   background-color: #6a83f5;
+  /*.navbar-toggler-icon{
+        background-color: $mysecundary;
+    }*/
 }
 
 #encabezado i {
   padding: 0rem 1rem 0rem 1rem;
-}
-
-#encabezado .navbar-toggler-icon {
-  background-color: white;
 }
 
 aside {
@@ -12203,10 +12202,9 @@ main .listCards {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-left: 0%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-left: 4%;
   margin-right: 0%;
   margin-top: 0%;
   margin-bottom: 4%;
@@ -12267,7 +12265,7 @@ main .listCards {
   display: -ms-grid;
   display: grid;
       grid-template-areas: "area1 area2 area3";
-  padding-left: 10%;
+  padding-left: 8%;
 }
 
 .listCards .card1 {
@@ -12368,11 +12366,11 @@ footer .Inputs {
   color: black;
 }
 
-@media all and (max-width: 660px) {
+@media all and (max-width: 628px) {
   /*******************/
   .slider {
     position: relative;
-    top: 7rem;
+    top: 9rem;
     width: 70%;
     margin: auto;
   }
@@ -12450,7 +12448,7 @@ footer .Inputs {
   }
   /*******************/
   #bienvenida {
-    padding-top: 100%;
+    padding-top: 70%;
     padding-left: 18%;
     display: -ms-grid;
     display: grid;
@@ -12513,6 +12511,7 @@ footer .Inputs {
     -ms-grid-row: 1;
     -ms-grid-column: 2;
     grid-area: h2;
+    text-align: center;
   }
   .contactos .Info .card-body p {
     -ms-grid-row: 2;
@@ -12588,13 +12587,25 @@ footer .Inputs {
     display: -ms-flexbox;
     display: flex;
     margin-left: 0%;
-    margin-right: 55%;
+    margin-right: 10%;
     margin-top: 0%;
     margin-bottom: 7%;
   }
+  .botonesMenu .BtnVer {
+    margin-left: 0%;
+    margin-right: 5%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+  }
   .tituloMenu {
-    margin-left: -50%;
-    margin-right: 0%;
+    margin-left: 0%;
+    margin-right: 20%;
+    margin-top: 0%;
+    margin-bottom: 6%;
+  }
+  .CuerpoMenu {
+    margin-left: 0%;
+    margin-right: 70%;
     margin-top: 0%;
     margin-bottom: 5%;
   }
@@ -12602,10 +12613,6 @@ footer .Inputs {
     display: -ms-grid;
     display: grid;
         grid-template-areas: "area1 area1"  "area2 area2"  "area3 area3";
-    margin-left: -25%;
-    margin-right: 0%;
-    margin-top: 0%;
-    margin-bottom: 5%;
   }
   .listCards .card1 {
     -ms-grid-row: 1;

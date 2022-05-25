@@ -38,6 +38,7 @@ botonVer.forEach(function(element,index)
                     return false; //salir de la funcion 
                 }
             }
+            
 
             if(listacartas[index].classList.contains('novisible')){
                 //quitar el visible, y añadir el ocultar

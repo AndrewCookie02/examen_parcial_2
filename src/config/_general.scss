@@ -7,14 +7,15 @@
 
 
 *{
-    margin: 0px;
-    padding: 0px;
+   
     text-decoration: none;
     list-style: none;
 }
 
 body{
     background-color: rgb(252, 127, 137);
+    margin: 0px;
+    padding: 0px;
     a{
         color: $mydark;
     }
@@ -29,10 +30,11 @@ body{
     i{
         padding: 0rem 1rem 0rem 1rem;
     }
+    
 
-    .navbar-toggler-icon{
+    /*.navbar-toggler-icon{
         background-color: $mysecundary;
-    }
+    }*/
 }
 
 aside{
