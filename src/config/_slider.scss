@@ -5,11 +5,14 @@
     width: 40%;
     height: 10%;
     margin: auto;
+    
 
     .imgslider{
 
         div figure{
             position: absolute;
+            border: solid $mysecundary ;
+            border-style: dotted;
             img{
                 width: 100%;
                 height: 100%;

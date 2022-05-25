@@ -12125,6 +12125,8 @@ main .listCards {
 
 .slider .imgslider div figure {
   position: absolute;
+  border: solid white;
+  border-style: dotted;
 }
 
 .slider .imgslider div figure img {
@@ -12398,7 +12400,7 @@ footer .Inputs {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    top: 10rem;
+    top: 8rem;
   }
   .slider .imgslider .detImg h3, .slider .imgslider .detImg .h3 {
     color: aliceblue;
