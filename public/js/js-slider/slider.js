@@ -2,7 +2,7 @@
 let listaDiv = document.querySelectorAll('.imgslider > div');
 let posVisible = 0;
 
-console.log (listaDiv.length); // Cuantos elementos tiene la lista
+//console.log (listaDiv.length); // Cuantos elementos tiene la lista
 
 //la funcion foreach recorre c/u de los elemntos de la lista
 listaDiv.forEach ((item) => {
@@ -21,7 +21,7 @@ setInterval(() => {
         item.classList.add('oculta');
     } );
 
-    console.log ('elemento visible  ' + posVisible);
+    //console.log ('elemento visible  ' + posVisible);
 
      //si el ultimo visible es igual al ultimo elemento, voy a reiniciar el contador 
      if(posVisible == (listaDiv.length - 1)) {
@@ -35,7 +35,7 @@ setInterval(() => {
     listaDiv[posVisible].classList.remove('oculta');
     listaDiv[posVisible].classList.add('visible');
 
-    console.log ('Siguiente a ver' + posVisible)
+    //console.log ('Siguiente a ver' + posVisible)
 
 
 }, 4000);
@@ -80,7 +80,7 @@ btnLeft.onclick = () =>{
     listaDiv[posVisible].classList.remove('oculta');
     listaDiv[posVisible].classList.add('visible');  
 
-    console.log ('Left ' + posVisible);
+    //console.log ('Left ' + posVisible);
 }
 
 
