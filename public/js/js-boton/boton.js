@@ -25,7 +25,7 @@ listacartas.forEach(function(element) {
 botonVer.forEach(function(element,index)
 {
 
-    console.log('posicionlistabotones' + index);
+    //console.log('posicionlistabotones' + index);
 
         element.onclick = function () {
             
