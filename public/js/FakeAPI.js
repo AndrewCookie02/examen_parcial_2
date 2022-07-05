@@ -2,19 +2,35 @@ let pUrl = "https://my-json-server.typicode.com/AndrewCookie02/Api_Cakes/Ingredi
 fetch(pUrl)
 .then(response => response.json())
 .then(data => {
-    //console.log(data);
+    console.log(data);
+    let card = document.querySelectorAll('.cardMenu');
+  
+    
+    data.forEach((element, index) => {
+        //let posc = index + 1; //1 posicion (0) se le suma 1
+        let boton = document.createElement ('button');
+       // console.log(card[index]);
+        
+        boton.setAttribute("type","button"); //noimbre del atributo y su valor.
+        boton.setAttribute("class" ,"btn btn-primary verModal");
+        boton.setAttribute("data-bs-target", "#Modal");
+        boton.setAttribute("data-bs-toggle", "modal");
+        boton.innerHTML = "M&aacute;s Información";
 
-    let modal = document.querySelector("#Modal");
-    //funcion onclick
-    let card = document.querySelectorAll('.cardMenu')
-    //let bodyCard = document.querySelectorAll(".card-body");
-    console.log(card);
-    let texto = "<div class='card-body'>" ; 
-    texto = texto + "<p class='card-text texto-txtp2'>Some quick  text to build on the card title and make up the bulk of the card's content.</p> <button type='button' class='btn btn-primary verModal' data-bs-toggle='modal' data-bs-target='#Modal' id='" + data.id + "'" + "onclick = 'VerInfo("+ data.id +")'"> + "M&aacute;s Información </button>"
-    texto = texto + "</div>";
-    card.innerHTML = texto ;
-     console.log(texto);
 
+        //funcion onlick
+        boton.onclick = () =>{
+            let fila = "<tr> <td> Sugar </th> <th>"+ element.Sugar + "</td>  </tr>" +
+            "<tr> <td> Sugar </th> <th>"+ element.Eggs + "</td>  </tr>";
+
+            document.querySelector(".tableMenu tbody").innerHTML = fila;
+        }
+
+        card[index].appendChild(boton); //los enlazo
+        
+    });
+   
+   
 /*
     let tbody = "<tbody>" ; 
     let lista = data.Ingredientes;
