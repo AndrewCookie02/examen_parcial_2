@@ -12297,6 +12297,23 @@ main .listCards {
   display: none;
 }
 
+.modal {
+  background-color: #ed454875;
+}
+
+.modal th {
+  font-family: 'Mukta', sans-serif;
+  color: #db4b57;
+}
+
+.modal td {
+  font-family: 'Mukta', sans-serif;
+}
+
+.modal .modal-body .table-responsive {
+  background-color: #ffe286;
+}
+
 footer {
   margin-left: 0px;
   margin-right: 0px;

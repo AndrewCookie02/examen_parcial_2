@@ -1,4 +1,5 @@
-let pUrl = "https://my-json-server.typicode.com/AndrewCookie02/Api_Cakes/Ingredientes" ;
+let pUrl = "https://my-json-server.typicode.com/ALoasiga/Api_Cakes-master/Ingredientes" ;
+
 fetch(pUrl)
 .then(response => response.json())
 .then(data => {
@@ -15,7 +16,7 @@ fetch(pUrl)
         boton.setAttribute("class" ,"btn btn-primary verModal");
         boton.setAttribute("data-bs-target", "#Modal");
         boton.setAttribute("data-bs-toggle", "modal");
-        boton.innerHTML = "M&aacute;s Información";
+        boton.innerHTML = "More Info";
 
 
         //funcion onlick
