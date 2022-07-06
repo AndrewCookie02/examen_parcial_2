@@ -22,7 +22,7 @@ fetch(pUrl)
         //funcion onlick
         boton.onclick = () =>{
             let fila = 
-            "<tr> <td>sugar </td>" +  
+            "<tr> <td> Sugar </td>" +  
             "<th>" + element.Sugar + "</th> </tr>" +
 
             "<tr> <td> Eggs </td>" + 
@@ -43,7 +43,7 @@ fetch(pUrl)
             "<tr> <td> Salt </td>" +  
             "<th>" + element.Salt + "</th> </tr>" +
             
-            "<tr> <td> CakeMix </td>" +  
+            "<tr> <td> Cake Mix </td>" +  
             "<th>" + element.Mix + "</th> </tr>" +
 
             "<tr> <td> Fruits </td>" +  
