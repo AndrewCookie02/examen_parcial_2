@@ -20,19 +20,34 @@ fetch(pUrl)
 
         //funcion onlick
         boton.onclick = () =>{
-            let fila = "<tr> <td> Sugar </th> <th>"+ element.Sugar + "</td>  </tr>" +
-            "<tr> <td> Sugar </th> <th>"+ element.Eggs + "</td>  </tr>" +
-            "<tr> <td> Baking Powder </th> <th>"+ element.BakingPowder + "</td>  </tr>" + 
-            "<tr> <td> Margarine or softened butter </th> <th>"+ element.Margarineorsoftenedbutter + "</td>  </tr>" +
-            "<tr> <td> Flour </th> <th>"+ element.Flour + "</td>  </tr>" +
-            "<tr> <td> Vanilla extract </th> <th>"+ element.Vanillaextract + "</td>  </tr>" +
-            "<tr> <td> Salt </th> <th>"+ element.Salt +
-            +
-            "<tr> <td> CakeMix </th> <th>"+ element.Mix + "</td>  </tr>" +
-            "<tr> <td> Fruits </th> <th>"+ element.Fruits + "</td>  </tr>"
-            ;
+            let fila = 
+            "<tr> <td>sugar </td>" +  
+            "<th>" + element.Sugar + "</th> </tr>" +
 
+            "<tr> <td> Eggs </td>" + 
+            "<th>" + element.Eggs + "</th> </tr>" +
 
+            "<tr> <td> Baking Powder </td>" +  
+            "<th>" + element.BakingPowder + "</th> </tr>" +
+
+            "<tr> <td> Margarine or softened butter </td>" +  
+            "<th>" + element.Margarineorsoftenedbutter + "</th> </tr>" +
+
+            "<tr> <td> Flour </td>" +  
+            "<th>" + element.Flour + "</th> </tr>" +
+
+            "<tr> <td> Vanilla extract </td>" +  
+            "<th>" + element.Vanillaextract + "</th> </tr>" +
+
+            "<tr> <td> Salt </td>" +  
+            "<th>" + element.Salt + "</th> </tr>" +
+            
+            "<tr> <td> CakeMix </td>" +  
+            "<th>" + element.Mix + "</th> </tr>" +
+
+            "<tr> <td> Fruits </td>" +  
+            "<th>" + element.Fruits + "</th> </tr>" ;
+            
             document.querySelector(".tableMenu tbody").innerHTML = fila;
         }
 
